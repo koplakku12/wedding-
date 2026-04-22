@@ -1,0 +1,89 @@
+:root {
+    --biru-tua: #3c5a78;
+    --biru-muda: #eaf1f4;
+    --emas: #d4af37;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    text-align: center;
+    color: #333;
+}
+
+/* Overlay Cover yang menutupi layar di awal */
+.cover-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 9999;
+    transition: 1s ease-in-out;
+}
+
+.cover-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Tombol Buka */
+.btn-main {
+    background: var(--biru-tua);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Konten Utama (sembunyi dulu sebelum dibuka) */
+#main-content {
+    display: none;
+    padding: 20px;
+}
+
+/* Bagian Profil Mempelai */
+.couple-section {
+    padding: 50px 20px;
+}
+
+.foto-mempelai {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 90px 90px 0 0;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.countdown {
+    background: var(--biru-tua);
+    color: white;
+    padding: 30px 10px;
+    margin: 20px 0;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#timer div {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 60px;
+}
