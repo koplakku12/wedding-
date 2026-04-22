@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Fauzan & Indah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cover" class="cover-overlay">
+        <div class="cover-content">
+            <p>The Wedding of</p>
+            <h1>Fauzan & Indah</h1>
+            <p>Kepada Bapak/Ibu/Saudara/i:</p>
+            <h2 id="guest-name">Tamu Undangan</h2>
+            <button onclick="bukaUndangan()" class="btn-main"><i class="fas fa-envelope-open"></i> Buka Undangan</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    </audio>
+
+    <main id="main-content" style="display:none;">
+        
+        <section class="hero">
+            <div class="hero-text">
+                <p>Welcome to our Wedding</p>
+                <h1>Fauzan & Indah</h1>
+                <p>26 April 2026</p>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya..." (Ar-Rum: 21)</p>
+        </section>
+
+        <section class="couple">
+            <div class="mempelai-box">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1550005814-02d6a713b632?q=80&w=400" alt="Mempelai Pria">
+                </div>
+                <h2>Fauzan Firmansyah, S.T</h2>
+                <p>Putra dari Bapak Fulan & Ibu Fulanah</p>
+                <div class="socials"><i class="fab fa-instagram"></i> @fauzan_ig</div>
+            </div>
+            
+            <div class="dan">&</div>
+
+            <div class="mempelai-box">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1594553258593-3d0859550329?q=80&w=400" alt="Mempelai Wanita">
+                </div>
+                <h2>Indah Permata, S.Pd</h2>
+                <p>Putri dari Bapak Fulan & Ibu Fulanah</p>
+                <div class="socials"><i class="fab fa-instagram"></i> @indah_ig</div>
+            </div>
+        </section>
+
+        <section class="countdown">
+            <h2>Menuju Hari Bahagia</h2>
+            <div id="timer">
+                <div><span id="days">00</span><small>Hari</small></div>
+                <div><span id="hours">00</span><small>Jam</small></div>
+                <div><span id="minutes">00</span><small>Menit</small></div>
+                <div><span id="seconds">00</span><small>Detik</small></div>
+            </div>
+        </section>
+
+        <section class="event">
+            <div class="card">
+                <h3>Akad Nikah</h3>
+                <p><i class="far fa-calendar-alt"></i> Minggu, 26 April 2026</p>
+                <p><i class="far fa-clock"></i> 09:00 - 10:00 WIB</p>
+                <p>Masjid Agung Sleman, Yogyakarta</p>
+                <a href="https://goo.gl/maps/example" class="btn-main">Google Maps</a>
+            </div>
+        </section>
+
+        <section class="rsvp">
+            <h2>Beri Ucapan & Doa Restu</h2>
+            <form id="wish-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <select>
+                    <option>Konfirmasi Kehadiran</option>
+                    <option>Hadir</option>
+                    <option>Tidak Hadir</option>
+                </select>
+                <textarea placeholder="Tulis ucapan..." rows="4"></textarea>
+                <button type="submit" class="btn-main">Kirim Ucapan</button>
+            </form>
+            <div id="wish-container">
+                </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+                                                                   
